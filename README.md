@@ -26,7 +26,7 @@ Executing at 08:52:01.9929689
 An error occurred while reading from the store provider's data reader. See the i
 nner exception for details. -->
 57014: cancelando la sentencia debido a que se agotó el tiempo de espera de sent
-encias -->
+encias --> (translates to: cancelling the sentence due to sentence timeout reached)
 
 Now: 08:52:32.0085988
 Time in ms: 30019
