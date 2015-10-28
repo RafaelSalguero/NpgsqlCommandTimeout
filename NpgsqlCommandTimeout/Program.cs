@@ -69,14 +69,6 @@ namespace NpgsqlCommandTimeout
                        M.table1.Where(z => z.value2 > y.value2).Sum(z => (double?)z.value2 + y.value1)
                     ));
 
-
-                    //Use this query instead if Q is not slow enough
-                    var Q2 = M.table1.Select(x => M.table1.Where(y => y.value1 > x.value1).Sum(y =>
-                      M.table1.Where(z => z.value2 > y.value2).Sum(z =>
-                      M.table1.Where(w => w.value3 > x.value3).Sum(w => (double?)w.value3 + z.value2 + y.value1)
-                      )));
-
-
                     Console.WriteLine(Q.ToString());
 
                     Console.WriteLine("Executing at " + DateTime.Now.TimeOfDay.ToString());
